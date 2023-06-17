@@ -15,4 +15,11 @@ class ProductController extends Controller
         $detail_data=product::find($id);
         return view('detail',['product'=>$detail_data]);
     }
+    function addToCart(Request $req){
+        if($req->session()->has('user')){
+            return "hello";
+        }else{
+           return redirect('/login');
+        }
+    }
 }
