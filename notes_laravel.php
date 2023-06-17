@@ -1,0 +1,4 @@
+
+<!-- @extends lets you "extend" a template, which defines its own sections etc. A template that you can extend will define its own sections using @yield , which you can then put your own stuff into in your view file. Now you could create another view which extends the same template, but provides its own sections. -->
+
+<!-- @section directive is inject content layout from extended blade layout and display in child blade. The content of these section will be displayed in the layout using @yield directive. @parent directive will be replaced by the content of the layout when the view is rendered. -->
